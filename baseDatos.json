@@ -1,0 +1,27 @@
+{
+  "usuarios": [
+    {
+      "usuarioNombre": "ale",
+      "password": "hola",
+      "id": 1
+    },
+    {
+      "usuarioNombre": "npm asdsda",
+      "password": "sadasdsad",
+      "id": 2
+    },
+    {
+      "usuarioNombre": "sdasdsa",
+      "password": "sadsadasd",
+      "id": 3
+    }
+  ],
+  "contactos": [
+    {
+      "nombreContacto": "Alejandro",
+      "numero": "2123232323",
+      "user": "ale",
+      "id": 1
+    }
+  ]
+}

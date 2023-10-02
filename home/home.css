@@ -1,0 +1,237 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+  margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#main {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.divs-input {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    width: 80%;
+}
+
+#form {
+    background-color: #155e46;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+}
+
+.boton {
+    border-radius: 0.7rem;
+    padding: 0;
+    height: 1.5rem;
+    width: 4rem;
+    background-color: lightgray;
+}
+.boton-activado {
+    background-color: #93c5d8;
+    font-weight: 700;
+}
+.boton-activado:hover {
+    cursor: pointer;
+}
+
+#lista {
+    height: 50%;
+    width: 80%;
+    display: flex;
+}
+
+#list {
+    background-color: #637b73;
+    padding: 0.5rem;
+    list-style: none;
+    overflow-y: scroll;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  ::-webkit-scrollbar-button {
+    border-radius: 0.5rem;
+  }
+
+
+.butons {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.inputs-edit {
+    width: 80%;
+}
+
+.svg-trash {
+    color: #000000;
+}
+
+#delete-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.delete-icon:hover {
+    cursor: pointer;
+    border-radius: 0.4rem;
+    background-color: rgba(255, 45, 45, 0.568);
+}
+#edit-boton {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.boton-editar {
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.edit-icon:hover {
+    cursor: pointer;
+    border-radius: 0.4rem;
+    background-color: rgb(86 47 153 / 59%);}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 0.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100% -0.5%;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+input {
+    margin: 0.5rem;
+    text-align: center;
+    background: #e7e7e7;
+}
+
+.error {
+    outline: 4px solid red;
+    
+}
+
+.success {
+    outline: 5px solid green;
+}
+
+.input-message {
+    display: none;
+}
+
+.show {
+    display: block;
+    color: red;
+    font-size: smaller;
+}
+
+.svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.editando {
+    border: 3px solid rgb(61, 64, 255);
+    background-color: #F9F9F9;
+    box-shadow: 0px 0px 25px 0px;
+}
+
+h2 {
+    color: #F9F9F9;
+}
+
+.show-svg {
+    display: block;
+}
+.hide-svg {
+    display: none;
+}

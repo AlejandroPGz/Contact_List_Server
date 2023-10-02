@@ -1,0 +1,170 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+html, body {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    /* background-image: url("https://www.imgacademy.com/sites/default/files/legacyhotel6.jpg"); */
+
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.notification {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        padding: 1rem;
+        background-color: #4338ca;
+        border-radius: 0.5rem;
+        color: white;
+        display: none;
+}
+
+.show-notification {
+    display: block;
+}
+/* main */
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* form */
+
+.form {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 2rem;
+    /* background-color: rgba(123, 120, 142, 0.367); */
+
+    color: #fff;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(5.5px);
+    
+    z-index: 20;
+}
+
+.form-title {
+    color: white;
+}
+
+.input {
+    height: 2rem;
+    width: 60%;
+    border-radius: 2rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.button {
+    height: 2rem;
+    width: 40%;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #261f61;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: #0f017e;
+
+
+}
+
+.span {
+    height: 2rem;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #0f017e;
+}
+.link:hover {
+    color: #2c2562;
+
+}
+
+/* wave */
+
+.wave {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+}
+
+.wave1 {
+    background: url(../svg/wave.svg);
+    background-size: 1000px;
+    width: 100%;
+    height: 100%;
+
+    animation: animate 10s linear infinite;
+}
+.wave2 {
+    background: url(../svg/wave2.svg);
+    background-size: 1000px;
+    width: 100%;
+    height: 100%;
+
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .form {
+        width: 50%; 
+    }
+}
