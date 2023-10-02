@@ -235,3 +235,17 @@ h2 {
 .hide-svg {
     display: none;
 }
+
+.notification {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    background-color: #4338ca;
+    border-radius: 0.5rem;
+    color: white;
+    display: block;
+}
+.notification:hover {
+    cursor: pointer;
+}

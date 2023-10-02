@@ -29,17 +29,24 @@ if (currentPage.includes("index.html")) {
         const users = await responseUsers.json();
         const verificarRepetidos = users.find(user => user.usuarioNombre === inputUserLogin.value);
         const verificarContraseña = users.find(user => user.password === inputPasswordLogin.value);
-        if (!verificarRepetidos) {
+        const verificarUserVacio = REGEXINPUT.test(inputUserLogin.value);
+        const verificarContraseñaVacia = REGEXINPUT.test(inputPasswordLogin.value);
+
+        if (verificarUserVacio) {
+            funcionNotification("Por favor, ingrese un usuario");
+        } else if (!verificarRepetidos) {
             funcionNotification("El usuario no existe");
+        } else if (verificarContraseñaVacia) {
+            funcionNotification("Por favor, ingrese una contraseña");
         } else {
             if (verificarContraseña) {
                 localStorage.setItem('user', JSON.stringify(verificarRepetidos))
                 window.location.href = 'home/home.html'
             } else {
                 funcionNotification("Contraseña incorrecta");
-            }
+            }  
         }
-    
+
     })
     
 }

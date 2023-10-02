@@ -3,6 +3,7 @@ const inputNumber = document.querySelector('#input-number');
 const boton = document.querySelector('.boton');
 const form = document.querySelector('#form');
 const list = document.querySelector('#list');
+const closeBtn = document.querySelector('#close-sesion');
 
 const addContacts = (nombre, numero, id ) => {
     const listItem = document.createElement('li');
@@ -253,6 +254,10 @@ list.addEventListener('click', async e => {
         };      
 });
 
+closeBtn.addEventListener('click', e => {
+    localStorage.removeItem('user');
+    window.location.href = "../index.html";
+});
 
 // lo primero que cargue es el local store
 window.onload = () => {
